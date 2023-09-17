@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,28,29,0.6472963483146068) 35%, rgba(0,212,255,1) 100%);
+}
+
+#resultado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap:30px 10px;
+}
+
+
+.card > *{
+    CURSOR: pointer;
+}
+
+.card:hover{
+    transform: scale(0.9);
+}
+
+img:hover > .card{
+    opacity: 0.2;    
+    z-index: -1;
+}
+
+#pagina{
+    display: flex;
+    flex-direction: center;
+    background-size: white;
+}
+
+h3 span,
+p span {
+    color: rgb(119, 137, 172);
+    flex-direction: column;
+    justify-content: space-between;
+}
